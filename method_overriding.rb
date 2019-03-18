@@ -33,3 +33,4 @@ end
 
 s = Test6.new
 s.a1
+

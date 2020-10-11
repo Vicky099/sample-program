@@ -88,3 +88,20 @@ p "----------------------------"
 c1 = Child2.new
 c1.msg1
 p "-----------------------------"
+
+
+class A
+	def a
+		puts "In class A"
+	end
+end
+
+class B < A
+	def a
+		puts "In class B"
+	end
+end
+
+b = B.new
+b.a
+# In class B

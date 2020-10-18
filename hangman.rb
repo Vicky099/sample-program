@@ -26,13 +26,13 @@ class HangMan
 	def enter_word
 		(1..@end_game).each_with_index do |i, index|
 			print "Please enter your #{index} aphabates here : "
-			input = gets.chomp
+			input = gets.chomp.upcase
 			p process(input)
 		end
 	end
 end
-string = 'Vikrami'
-h = HangMan.new(string)
+string_arr = ['VIKRAM', 'VIJAY', 'PANMAND', 'TOGETHER', 'INDIA', 'VINAYAK', 'HINDISTAN', 'NAGAR', 'MADAM', 'MOBILE', 'LAPTOP']
+h = HangMan.new(string_arr.sample.upcase)
 p "Welcome to HangMan Game"
 h.enter_word
 p "Your final String : #{h.get_final}"
